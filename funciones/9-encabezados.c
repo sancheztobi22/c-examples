@@ -5,19 +5,28 @@ int main() {
 
     int v;
     int z;
+    int w;
 
-    // Llama a las 3 funciones
+
+    // Llama a las  funciones
     funcion1();
     funcion2(5, 2.67);
     v = funcion3(10);
     z = funcion4(4);
+    w = funcion5(6);
+
 
     // Imprime el valor que retornó funcion3()
     printf("v = %d\n", v);
 
+
     /// imprimir el valor que retorno funcion4()
     ///
     printf("z = %d\n", z);
+
+
+    //imprime valor de retorno de funcion5()
+    printf("w = %d\n", w);
 
 
     return 0;
@@ -43,6 +52,7 @@ int funcion3(int x) {
     return y;
 }
 
+
 /// implementacion de funcion4 para la resta
 ///
 int funcion4(int x){
@@ -51,3 +61,11 @@ int funcion4(int x){
 	return z;
 }
 
+
+// implementacion de funcion5
+//
+int funcion5(int x){
+	printf("En funcion5()..\n");
+    int w = x + 4;
+    return w;
+}
